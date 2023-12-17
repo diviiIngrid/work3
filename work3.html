@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <title>Задача3</title>
+            <meta charset="UTF-8">
+        </head>
+            <body>
+            <script>
+
+              class Group {
+                #name;
+                constructor (name, mark, age) {
+                this.#name = name;
+                this.mark = mark;
+                this.age = age;
+                }
+                _getName() {
+                return this.#name;
+
+              }
+              getAge() {
+                return this.age;
+              }
+              static publish(member1, member2) {
+                return member1.mark == member2.mark;
+              }
+              }
+
+              let student1 = new Group ("Misha", 3, 18);
+              let student2 = new Group ("Sasha", 4, 19);
+              console.log (student1._getName(), student1.getAge());
+              console.log (student2._getName(), student2.getAge());
+              console.log (Group.publish(student1, student2))
+
+
+
+
+
+              </script>
+
+            </body>
+            </html>
